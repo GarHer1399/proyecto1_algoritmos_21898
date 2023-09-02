@@ -35,8 +35,8 @@ FIN
 # Inicia el proceso
 
 **PYTHON**
-    import random
 
+    import random
     palabras = ["computacion"]
 
     palabraSecreta = random.choice(palabras)
