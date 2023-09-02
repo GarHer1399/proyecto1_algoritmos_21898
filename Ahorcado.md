@@ -35,17 +35,22 @@ FIN
 # Inicia el proceso
 
 **PYTHON**
+    import random
 
-import random
-palabras = ["computacion"]
-palabraSecreta = random.choice(palabras)
-intentosMaximos = 6
-intentosRestantes = intentosMaximos
-letrasAdivinadas = ["_"] * len(palabraSecreta)
-haAdivinado = False
-while intentosRestantes > 0 and not haAdivinado:
+    palabras = ["computacion"]
+
+    palabraSecreta = random.choice(palabras)
+
+    intentosMaximos = 6
+    intentosRestantes = intentosMaximos
+    letrasAdivinadas = ["_"] * len(palabraSecreta)
+    haAdivinado = False
+
+    while intentosRestantes > 0 and not haAdivinado:
     print("Palabra a adivinar:", " ".join(letrasAdivinadas))
+    print()
     print("Intentos restantes:", intentosRestantes)
+    print()
 
     letra = input("Ingresa una letra: ").lower()
 
@@ -58,16 +63,20 @@ while intentosRestantes > 0 and not haAdivinado:
 
         if letraAdivinada:
             print("¡Correcto! La letra está en la palabra.")
+            print()
         else:
-            print("Incorrecto. La letra no está en la palabra.")
+            print("La letra no está en la palabra.")
+            print()
             intentosRestantes -= 1
 
         if "".join(letrasAdivinadas) == palabraSecreta:
             haAdivinado = True
             print("¡Felicidades! Has adivinado la palabra:", palabraSecreta)
+            print()
 
-         if not haAdivinado:
+if not haAdivinado:
     print("Perdiste. La palabra secreta era:", palabraSecreta)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **C++**
