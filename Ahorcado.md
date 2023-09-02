@@ -35,21 +35,24 @@ FIN
 
 **PYTHON**
 
+import random
 
+# Lista de palabras para adivinar
 palabras = ["computacion"]
 
+# Elegir una palabra aleatoria
 palabraSecreta = random.choice(palabras)
 
+# Inicializar variables
 intentosMaximos = 6
 intentosRestantes = intentosMaximos
 letrasAdivinadas = ["_"] * len(palabraSecreta)
 haAdivinado = False
 
+# Bucle principal del juego
 while intentosRestantes > 0 and not haAdivinado:
     print("Palabra a adivinar:", " ".join(letrasAdivinadas))
-    print()
     print("Intentos restantes:", intentosRestantes)
-    print()
 
     letra = input("Ingresa una letra: ").lower()
 
@@ -62,22 +65,17 @@ while intentosRestantes > 0 and not haAdivinado:
 
         if letraAdivinada:
             print("¡Correcto! La letra está en la palabra.")
-            print()
         else:
-            print("La letra no está en la palabra.")
-            print()
+            print("Incorrecto. La letra no está en la palabra.")
             intentosRestantes -= 1
 
         if "".join(letrasAdivinadas) == palabraSecreta:
             haAdivinado = True
             print("¡Felicidades! Has adivinado la palabra:", palabraSecreta)
-            print()
 
-Mostrar el resultado del juego
+# Mostrar el resultado del juego
 if not haAdivinado:
     print("Perdiste. La palabra secreta era:", palabraSecreta)
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **C++**
