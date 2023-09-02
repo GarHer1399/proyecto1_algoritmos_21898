@@ -37,19 +37,15 @@ FIN
 
 import random
 
-# Lista de palabras para adivinar
 palabras = ["computacion"]
 
-# Elegir una palabra aleatoria
 palabraSecreta = random.choice(palabras)
 
-# Inicializar variables
 intentosMaximos = 6
 intentosRestantes = intentosMaximos
 letrasAdivinadas = ["_"] * len(palabraSecreta)
 haAdivinado = False
 
-# Bucle principal del juego
 while intentosRestantes > 0 and not haAdivinado:
     print("Palabra a adivinar:", " ".join(letrasAdivinadas))
     print("Intentos restantes:", intentosRestantes)
