@@ -27,11 +27,10 @@ CUANDO SE ENCUENTREN TODAS LAS COMBINACIONES ESCRIBIR
 FIN
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-
+# Inicia el proceso
 
 **PYTHON**
 
-# Inicia el proceso
 
 ```python
 print("A continuación verán la lista de números enteros que cumplen con un triple pitagórico")
