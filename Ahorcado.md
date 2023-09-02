@@ -38,9 +38,7 @@ FIN
 import random
 
 palabras = ["computacion"]
-
 palabraSecreta = random.choice(palabras)
-
 intentosMaximos = 6
 intentosRestantes = intentosMaximos
 letrasAdivinadas = ["_"] * len(palabraSecreta)
