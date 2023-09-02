@@ -2,7 +2,7 @@ Se presenta el codigo para el juego de Ahorcado en los lenguajes de programacion
 
 **PSEUDOCODIGO**
 
-**INICIO DEL JUEGO:**
+*INICIO DEL JUEGO:*
 Elegir una palabra  ["COMPUTACION"]
 Inicializar variables:
 INTENTOS RESTANTES = 6
@@ -22,7 +22,7 @@ Restar 1 a INTENTOS RESTANTES
 Mostrar "INCORRECTO. LA LETRA NO ESTÁ EN LA PALABRA."
 
 *MOSTRAR EL RESULTADO DEL JUEGO:*
-**SI PALABRA ADIVINADA NO CONTIENE "_":**
+*SI PALABRA ADIVINADA NO CONTIENE "_":*
 Mostrar "¡FELICIDADES! HAS ADIVINADO LA PALABRA:", PALABRA ADIVINADA
 
 *EN CASO CONTRARIO:*
@@ -36,19 +36,15 @@ FIN
 **PYTHON**
 
 
-# Lista de palabras para adivinar
 palabras = ["computacion"]
 
-# Elegir una palabra aleatoria
 palabraSecreta = random.choice(palabras)
 
-# Inicializar variables
 intentosMaximos = 6
 intentosRestantes = intentosMaximos
 letrasAdivinadas = ["_"] * len(palabraSecreta)
 haAdivinado = False
 
-# Bucle principal del juego
 while intentosRestantes > 0 and not haAdivinado:
     print("Palabra a adivinar:", " ".join(letrasAdivinadas))
     print()
@@ -77,7 +73,7 @@ while intentosRestantes > 0 and not haAdivinado:
             print("¡Felicidades! Has adivinado la palabra:", palabraSecreta)
             print()
 
-# Mostrar el resultado del juego
+Mostrar el resultado del juego
 if not haAdivinado:
     print("Perdiste. La palabra secreta era:", palabraSecreta)
 
@@ -85,7 +81,6 @@ if not haAdivinado:
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **C++**
-
 
 #include <iostream>
 #include <string>
