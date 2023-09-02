@@ -1,4 +1,4 @@
-Se presenta el codigo para obtener los posibles Triples Pitagoricos en los lenguajes de programacion solicitados y psudocodigo.
+Se presenta el codigo para obtener los posibles Triples Pitagoricos en los lenguajes de programacion solicitados y pseudocodigo.
 
 **PSEUDOCODIGO**
 
