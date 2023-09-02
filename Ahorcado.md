@@ -67,8 +67,7 @@ while intentosRestantes > 0 and not haAdivinado:
             haAdivinado = True
             print("¡Felicidades! Has adivinado la palabra:", palabraSecreta)
 
-# Mostrar el resultado del juego
-if not haAdivinado:
+         if not haAdivinado:
     print("Perdiste. La palabra secreta era:", palabraSecreta)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
