@@ -37,12 +37,12 @@ FIN
 
 import random
 
-palabras = ["computacion"]
-palabraSecreta = random.choice(palabras)
-intentosMaximos = 6
-intentosRestantes = intentosMaximos
-letrasAdivinadas = ["_"] * len(palabraSecreta)
-haAdivinado = False
+-palabras = ["computacion"]
+-palabraSecreta = random.choice(palabras)
+-intentosMaximos = 6
+-intentosRestantes = intentosMaximos
+-letrasAdivinadas = ["_"] * len(palabraSecreta)
+-haAdivinado = False
 
 while intentosRestantes > 0 and not haAdivinado:
     print("Palabra a adivinar:", " ".join(letrasAdivinadas))
