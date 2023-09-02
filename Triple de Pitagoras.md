@@ -29,7 +29,7 @@ FIN
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-** PYTHON **
+**PYTHON**
 
 # Inicia el proceso
 
@@ -41,7 +41,7 @@ contador = 0   # Para saber el número de posibles combinaciones
 for A in range(1, 501):
     for B in range(1, 501):
         for C in range(1, 501):
-            if A**2 + B**2 == C**2:      # Ecuación pitagórica 
+            if A**2 + B**2 == C**2:      #Ecuación pitagórica 
                 print(f"El grupo de enteros cumple la condición: {A}  {B}  = {C}")
                 print()
                 contador += 1
@@ -52,7 +52,8 @@ print()
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-** C++ **
+**C++**
+
 
 #include <iostream>
 
