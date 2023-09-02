@@ -73,9 +73,8 @@ FIN
             haAdivinado = True
             print("¡Felicidades! Has adivinado la palabra:", palabraSecreta)
             print()
-
-if not haAdivinado:
-    print("Perdiste. La palabra secreta era:", palabraSecreta)
+        if not haAdivinado:
+         print("Perdiste. La palabra secreta era:", palabraSecreta)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
